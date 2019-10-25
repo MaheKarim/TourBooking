@@ -1,44 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('frontend.layout')
 
-
-<!-- Mirrored from rn53themes.net/themes/demo/travelz/booking-tour-package.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 10 Oct 2019 20:50:53 GMT -->
-<head>
-    <title>The Travel - Tour Travel</title>
-    <!--== META TAGS ==-->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <!-- FAV ICON -->
-    <link rel="shortcut icon" href="{{ asset('/') }}images/fav.ico">
-    <!-- GOOGLE FONTS -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins%7CQuicksand:400,500,700" rel="stylesheet">
-    <!-- FONT-AWESOME ICON CSS -->
-    <link rel="stylesheet" href="{{ asset('/') }}css/font-awesome.min.css">
-    <!--== ALL CSS FILES ==-->
-    <link rel="stylesheet" href="{{ asset('/') }}css/style.css">
-    <link rel="stylesheet" href="{{ asset('/') }}css/materialize.css">
-    <link rel="stylesheet" href="{{ asset('/') }}css/bootstrap.css">
-    <link rel="stylesheet" href="{{ asset('/') }}css/mob.css">
-    <link rel="stylesheet" href="{{ asset('/') }}css/animate.css">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-	<script src="js/html5shiv.js"></script>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
-</head>
-
-<body>
-    <!-- Preloader -->
-    <div id="preloader">
-        <div id="status">&nbsp;</div>
-    </div>
-
-   <!-- Start Header Section -->
-   {{-- @include('frontend.inc.header') --}}
-    <!--END HEADER SECTION-->
-	
-	<!--HEADER  Booking SECTION-->
+@section('content')
+		<!--HEADER  Booking SECTION-->
 	{{-- @include('frontend.booking-form') --}}
 	<!--END HEADER Booking  SECTION-->
 	<!--====== HOME PLACES ==========-->
@@ -367,7 +330,7 @@
 		</div>
 	</section>
 	<!--====== SECTION: FREE CONSULTANT ==========-->
-	<section>
+	{{-- <section>
 		<div class="tb-space tour-consul">
 			<div class="container">
 				<div class="col-md-6"> <span class="to-con-1">Get in touch with us</span>
@@ -378,7 +341,7 @@
 				<div class="col-md-6 ho-vid"> <img src="images/video.png" alt=""> </div>
 			</div>
 		</div>
-	</section>
+	</section> --}}
 	<!--====== EVENTS ==========-->
 	<section>
 		<div class="rows tb-space">
@@ -539,7 +502,7 @@
 		</div>
 	</section>
 	<!--====== REQUEST A QUOTE ==========-->
-	<section>
+	{{-- <section>
 		<div class="ho-popu tb-space pad-bot-redu">
 			<div class="rows container">
 				<!-- TITLE & DESCRIPTION -->
@@ -715,7 +678,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> --}}
 	<!--====== REQUEST A QUOTE ==========-->
 	{{-- <section>
 		<div class="foot-mob-sec tb-space">
@@ -845,11 +808,4 @@
 		</div>
 	</section>
 	<!--====== FOOTER 1 ==========-->
-	
-	{{-- @include('frontend.inc.footer') --}}
-	@include('frontend.inc.script')
-</body>
-
-
-<!-- Mirrored from rn53themes.net/themes/demo/travelz/booking-tour-package.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 10 Oct 2019 20:50:53 GMT -->
-</html>
+@endsection

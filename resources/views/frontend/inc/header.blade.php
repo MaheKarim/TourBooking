@@ -103,9 +103,9 @@
                     </div>
                     <div class="ed-com-t1-right">
                         <ul>
-                            <li><a href="login.html">Sign In</a>
+                            <li><a href="{{ route('login') }}">Sign In</a>
                             </li>
-                            <li><a href="register.html">Sign Up</a>
+                            <li><a href="{{ route('register') }}">Sign Up</a>
                             </li>
                         </ul>
                     </div>
@@ -295,7 +295,7 @@
                                                 <h4 class="ed-dr-men-mar-top">User login pages</h4>
                                                 <ul>
                                                     <li><a href="register.html">Register</a></li>
-                                                    <li><a href="login.html">Login and Sign in</a></li>
+                                                <li><a href="{{ route('login') }}">Login and Sign in</a></li>
                                                     <li><a href="forgot-pass.html">Forgot pass</a></li>
                                                 </ul>
                                             </div>
